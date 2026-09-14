@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Gradient Radial</title>
+</head>
+<body>
+    <svg height="200" width="400">
+        <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:rgb(0, 255, 89);"/>
+                <stop offset="100%" style="stop-color:rgb(47, 50, 47);"/>
+            </radialGradient>
+        </defs>
+        <circle cx="100" cy="100"  r="80" fill="url(#grad1)" />
+    </svg>
+</body>
+</html>

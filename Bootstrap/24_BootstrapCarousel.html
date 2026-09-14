@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+        h1{
+            text-align: center;
+            color: palevioletred;
+        }
+        h3{
+            color: purple;
+        }
+        body{
+            height: 1500px;
+        }
+        .pad-100{
+            padding:100px!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Carousel Example</h1>
+        <br><br>
+        <h3>1. Basic Carousel</h3>
+        <br>
+        <div id="ExampleCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg-info p-4 text-light d-block w-100">
+                        <p>ANIKET DATTATRAY KALE</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                     <div class="bg-success p-4 text-light d-block w-100">
+                        <p>MANSI DATTATRAY KALE</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                     <div class="bg-warning p-4 text-light d-block w-100">
+                        <p>SARIKA DATTATRAY KALE</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <br><br>
+        <h3>2. Carousel With Controls</h3>
+        <br>
+        <div id="ExampleCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg-info p-4 text-light d-block w-100 text-center">
+                        <p>ANIKET DATTATRAY KALE</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                     <div class="bg-success p-4 text-light d-block w-100 text-center">
+                        <p>MANSI DATTATRAY KALE</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                     <div class="bg-warning p-4 text-light d-block w-100 text-center">
+                        <p>SARIKA DATTATRAY KALE</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ExampleCarousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ExampleCarousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+         <br><br>
+        <h3>3. Carousel With Controls , Indicators & Time Intervals</h3>
+        <br>
+        <div id="ExampleCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#ExampleCarousel2" data-bs-slide-to="0" class="active">0</li>
+                <li data-bs-target="#ExampleCarousel2" data-bs-slide-to="1">1</li>
+                <li data-bs-target="#ExampleCarousel2" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <div class="bg-info p-4 text-light d-block w-100 text-center">
+                        <p>ANIKET DATTATRAY KALE</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                     <div class="bg-success p-4 text-light d-block w-100 text-center">
+                        <p>MANSI DATTATRAY KALE</p>
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="5000">
+                     <div class="bg-warning p-4 text-light d-block w-100 text-center">
+                        <p>SARIKA DATTATRAY KALE</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ExampleCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ExampleCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+         <br><br>
+        <h3>4. Carousel With Controls Indicators , captions & Fade</h3>
+        <br>
+        <div id="ExampleCarousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#ExampleCarousel3" data-bs-slide-to="0" class="active">0</li>
+                <li data-bs-target="#ExampleCarousel3" data-bs-slide-to="1">1</li>
+                <li data-bs-target="#ExampleCarousel3" data-bs-slide-to="2">2</li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg-info p-4 text-light d-block w-100 text-center pad-100">
+                        <p>ANIKET DATTATRAY KALE</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First Slide</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                     <div class="bg-success p-4 text-light d-block w-100 text-center pad-100">
+                        <p>MANSI DATTATRAY KALE</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second Slide</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                     <div class="bg-warning p-4 text-light d-block w-100 text-center pad-100">
+                        <p>SARIKA DATTATRAY KALE</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third Slide</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ExampleCarousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ExampleCarousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
