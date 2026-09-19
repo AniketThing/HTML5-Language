@@ -167,7 +167,7 @@ Real-World Projects
 
 ## 🔗 Connect With Me
 
-* GitHub: 
+* GitHub: https://github.com/AniketThing
 * LinkedIn: www.linkedin.com/in/aniket-kale-841b97285
 
 ---
